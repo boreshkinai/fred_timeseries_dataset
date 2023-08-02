@@ -9,7 +9,8 @@ If you use this dataset or code in any context, please cite this:
 	volume={35},
 	number={10}, 
 	journal={in Proc. AAAI}, 
-	author={Oreshkin, Boris N. and Carpov, Dmitri and Chapados, Nicolas and Bengio, Yoshua}, 	year={2021}, 
+	author={Oreshkin, Boris N. and Carpov, Dmitri and Chapados, Nicolas and Bengio, Yoshua},
+	year={2021}, 
 	pages={9242--9250} 
 }
 ```
