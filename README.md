@@ -1,21 +1,18 @@
-### Initialize Project
+# Using this repository
 
-```bash
-$ mkdir -p <project-path>
-$ cd <project-path>
-$ git clone git@github.com:ElementAI/timeseries-tl.git source
+## Create workspace and clone this repository
+
+```mkdir workspace```
+
+```cd workspace```
+
+```git clone https://github.com/boreshkinai/fred_timeseries_dataset```
+
+## Build docker image and launch container 
 ```
-
-All commands below should be executed from `<project-path>/source`
-
-### Build docker
-
-```bash
-make init
+docker build -f Dockerfile -t fred_timeseries_dataset:$USER .
+nvidia-docker run -p 8888:8888 -p 6006:6006 -v ~/workspace/fred_timeseries_dataset:/workspace/fred_timeseries_dataset -t -d --shm-size="1g" --name fred_timeseries_dataset_$USER fred_timeseries_dataset:$USER
 ```
-
-This project requires NVidia GPU. But for some tests, where GPU is not required it's possible to pass `gpu=None` 
-and start container without GPU.
 
 ### Download datasets
 
