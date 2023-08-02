@@ -1,6 +1,6 @@
 import os
 
-STORAGE_DIR = os.path.join(os.sep, 'workspace', 'timeseries-tl', 'storage')
+STORAGE_DIR = './storage'
 RESOURCES_DIR = os.path.join(STORAGE_DIR, 'resources')
 
 
