@@ -1,5 +1,19 @@
 # Using this repository
 
+## This repository implements the download of FRED dataset described in this paper
+
+If you use this dataset or code in any context, please cite this:
+```
+@article{oreshkin2021zero, 
+	title={Meta-Learning Framework with Applications to Zero-Shot Time-Series Forecasting}, 
+	volume={35},
+	number={10}, 
+	journal={in Proc. AAAI}, 
+	author={Oreshkin, Boris N. and Carpov, Dmitri and Chapados, Nicolas and Bengio, Yoshua}, 	year={2021}, 
+	pages={9242--9250} 
+}
+```
+
 ## Create workspace and clone this repository
 
 ```mkdir workspace```
